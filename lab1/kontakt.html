@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep z akcesoriami komputerowymi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Sklep z akcesoriami komputerowymi</h1></header>
+    <nav>
+        <ul class="ul-nav">
+            <li><h2><a href="index.html" aria-current="page">Strona Główna</a></h2></li>
+            <li><h2><a href="produkt.html" aria-current="page">Produkt</a></h2></li>
+            <li><h2><a href="kontakt.html" aria-current="page">Kontakt</a></h2></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="kontakt.html" method="get">
+            <label for="e-mail">email: (pole obowiązkowe)</label>
+            <input required type="email" name="email" id="e-mail">
+            <br>
+            <label for="produkt">produkt: (pole obowiązkowe)</label> 
+            <select required name="produkt" id="produkt">
+                <option value="">Wybierz produkt</option>
+                <option value="Myszka SteelSeries rival 650 Wireless">Myszka SteelSeries rival 650 Wireless</option>
+                <option value="Arctis Nova 7 Wireless Gen 2">Arctis Nova 7 Wireless Gen 2</option>
+                <option value="Apex Pro TKL Gen 3 White - US">Apex Pro TKL Gen 3 White - US</option>
+            </select>
+            <br>
+            <label for="ilosc-sztuk">ilosc-sztuk: (1-5) (pole obowiązkowe)</label>
+            <input required type="number" name="ilosc" min="1" max="5" step="1" id="ilosc-sztuk">
+            <br>
+            <label for="wiadomosc">wiadomość: (10-500S) (pole obowiązkowe)</label> 
+            <textarea required name="wiadomosc" minlength="10" maxlength="500" id="wiadomosc"></textarea>
+            <br>
+            <button type="submit">Sprawdź zapytanie</button>
+            <br><br>
+            Formularz demonstracyjny. Dane pojawią się w adresie strony; zapytanie nie
+zostanie zapisane ani wysłane e-mailem
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
