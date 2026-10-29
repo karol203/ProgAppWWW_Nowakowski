@@ -1,10 +1,10 @@
 Przeglądarka Google Chrome Wersja 156.0.8078.73 (Oficjalna wersja) (64-bitowa)
 
-Motyw i nawigacja           Zmiana motywu utrzymuje się po odświeżeniu i zmianie
+Motyw i nawigacja:           Zmiana motywu utrzymuje się po odświeżeniu i zmianie
                             podstrony; aria-pressed odpowiada stanowi.
 
 Start trzy razy potem       Działa jeden interwał; Stop zatrzymuje aktualizację, a wznowienie
-Stop i Start                pokazuje aktualny czas
+Stop i Start:                pokazuje aktualny czas
 
 Fragment nazwy ze           Pasujące karty pozostają widoczne; licznik zgadza się z widokiem.
 spacjami i inną 
