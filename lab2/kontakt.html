@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep z akcesoriami komputerowymi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header><h1>Sklep z akcesoriami komputerowymi</h1></header>
+    <button type="button" id="theme-toggle" aria-pressed="false">Tryb jasny</button>
+    <nav>
+        <ul class="ul-nav">
+            <li><h2><a href="index.html" aria-current="page">Strona Główna</a></h2></li>
+            <li><h2><a href="produkt.html" aria-current="page">Produkt</a></h2></li>
+            <li><h2><a href="kontakt.html" aria-current="page">Kontakt</a></h2></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Podgląd lokalny. Formularz nie wysyła wiadomości</p>
+        <form action="kontakt.html" method="get" id="contact-form">
+            <label for="e-mail">email: (pole obowiązkowe)</label>
+            <input required type="email" name="email" id="e-mail">
+            <label for="product-select">produkt: (pole obowiązkowe)</label> 
+            <select required name="produkt" id="product-select">
+                <option value="">Wybierz produkt</option>
+                <option value="p1">Myszka SteelSeries rival 650 Wireless</option>
+                <option value="p2">Arctis Nova 7 Wireless Gen 2</option>
+                <option value="p3">Apex Pro TKL Gen 3 White - US</option>
+            </select>
+            <label for="quantity-input">ilosc-sztuk: (1-5) (pole obowiązkowe)</label>
+            <input required type="number" name="ilosc" min="1" max="5" step="1" id="quantity-input">
+            <p id="live-calculation">Wybierz produkt i ilość (1-5), aby zobaczyć wycenę.</p>
+            <label for="message-input">wiadomość: (10-500S) (pole obowiązkowe)</label> 
+            <textarea required name="wiadomosc" minlength="10" maxlength="500" id="message-input"></textarea>
+            <span id="message-error" style="color: #ff4444; font-weight: bold;"></span>
+            <button type="submit">Sprawdź zapytanie</button>
+        </form>
+        <div id="summary-section" style="margin-top: 20px; white-space: pre=wrap; background-color: var(--card-bg); padding: 15px;"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>

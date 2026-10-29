@@ -1,0 +1,104 @@
+:root {
+    --bg-color: rgb(16, 15, 15);
+    --text-color: #f1f1f1;
+    --card-bg: #2d2d2d;
+    --input-bg: #333333;
+    
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #f9f9f9;
+    --input-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:hover{
+    color: aqua;
+}
+
+a:focus-visible{
+    outline: 3px solid aqua;
+    border-radius: 4px;
+    outline-offset: 4px;
+}
+
+button:focus-visible {
+    outline: 3px solid aqua;
+    border-radius: 4px;
+    outline-offset: 4px;
+}
+
+.katalog {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+.ul-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+body {
+    max-width: 1200px;
+    margin:0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.katalog img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+form, #summary-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px;
+}
+
+.karta {
+    background-color: var(--card-color);
+    border: 3px solid #55575d;
+}
+
+.karta:hover {
+        background-color: #696c73;
+    }
+
+@media (min-width: 768px){
+    .katalog {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+input, textarea, select {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+[hidden] {
+    display: none !important;
+}
+.wyszukiwarka {
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
