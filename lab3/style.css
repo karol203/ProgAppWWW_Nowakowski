@@ -127,3 +127,6 @@ input, textarea, select {
     cursor: pointer;
     font-weight: bold;
 }
+#lab3-demo .lab3-panel {
+    margin-top: 15px;
+}
