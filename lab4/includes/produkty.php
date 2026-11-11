@@ -17,11 +17,11 @@ $produkty = [
         'nazwa' => 'Klawiatura Apex Pro TKL',
         'kategoria' => 'akcesoria',
         'stan' => 0
-    ]
+    ],
     [
         'id' => 4,
         'nazwa' => 'PHP i MySQL. Tworzenie stron WWW',
         'kategoria' => 'ksiazki',
         'stan' => 12
-    ],
+    ]
 ];

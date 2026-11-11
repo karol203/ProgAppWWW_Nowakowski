@@ -1,6 +1,6 @@
 <?php
 $tytulStrony = 'Katalog produktów PHP - Laboratorium 4';
-$idGrupy = 'Grupa-ISI-2';
+$idGrupy = 'ISI-2';
 ?>
 <header class="top-bar">
     <div class="top-lewa">
