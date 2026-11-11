@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep z akcesoriami komputerowymi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="vendor/jquery-4.0.0.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/lab3.js" defer></script></head>
+<body>
+    <header><h1>Sklep z akcesoriami komputerowymi</h1>
+    <button type="button" id="theme-toggle" aria-pressed="false">Tryb jasny</button>
+    </header>
+    <nav>
+        <section class="zegar">
+                <h2 id="clock-display">Ładowanie czasu...</h2>
+                <button type="button" id="start-btn">Start zegara</button>
+                <button type="button" id="stop-btn">Stop zegara</button>
+        </section>
+        <ul class="ul-nav">
+            <li><h2><a href="index.html" aria-current="page">Strona Główna</a></h2></li>
+            <li><h2><a href="html/produkt.html">Produkt</a></h2></li>
+            <li><h2><a href="html/kontakt.html">Kontakt</a></h2></li>
+            <li><h2><a href="lab4.php">Katalog PHP</a></h2></li>
+        </ul>
+    </nav>
+    <section class="wyszukiwarka">
+        <label for="search-input">Szukaj produktu:</label>
+        <input type="search" id="search-input" placeholder="Wpisz nazwę...">
+        <div id="search-status" aria-live="polite">Znaleziono produktów: 3</div>
+    </section>
+    <main class="katalog">
+        <article class="karta">
+            <a href="html/produkt.html">
+            <h2>Myszka SteelSeries rival 650 Wireless</h2>
+            <img src="img/p-steelseries-rival-650-62456.png" alt="rival 650 Wireless" width="233" height="430">
+                Mysz sportowa z podwójnym czujnikiem optycznym
+            <h2>549.99 zł</h2>
+            </a>
+        </article>
+        <article class="karta">
+            <h2>Arctis Nova 7 Wireless Gen 2</h2>
+            <img src="img/artis.png" alt="Arctis Nova 7 Wireless Gen 2" width="1200" height="733">
+            Zestaw słuchawkowy do gier z kontrolą za pomocą aplikacji mobilnej
+            <h2>649,99 zł</h2>
+        </article>
+        <article class="karta">
+            <h2>Apex Pro TKL Gen 3 White - US</h2>
+            <img src="img/apex.png" alt="Apex Pro TKL Gen 3 White - US" width="1200" height="959">
+            Bezprzewodowa klawiatura komputerowa
+            <h2>1059,99 zł</h2>
+        </article>
+    </main>
+    <section id="lab3-demo" class="lab3-sekcja">
+            <div class="anim-kontener">
+                <button type="button" id="anim-a" class="anim-box" aria-pressed="false">
+                    Obiekt A (Kliknij)
+                </button>
+                <button type="button" id="anim-b" class="anim-box">
+                    Obiekt B (Najedź / Fokus)
+                </button>
+                <button type="button" id="anim-c" class="anim-box">
+                    Obiekt C (Kliknij 5x)
+                </button>
+            </div>
+
+            <div class="lab3-panel">
+                <p id="status-c" role="status">Kroki obiektu C: 0 / 5</p>
+                <button type="button" id="reset-ac">Resetuj A i C</button>
+            </div>
+
+            <hr>
+
+            <div class="lab3-ajax">
+                <button type="button" id="check-server">Sprawdź serwer</button>
+                <p id="server-status" role="status">Status serwera: nie sprawdzono</p>
+            </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
