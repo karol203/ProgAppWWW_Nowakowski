@@ -1,0 +1,19 @@
+<form action="index.php?idp=kontakt" method="get" id="contact-form">
+    <label for="e-mail">email: (pole obowiązkowe)</label>
+    <input required type="email" name="email" id="e-mail">
+    <label for="product-select">produkt: (pole obowiązkowe)</label>
+    <select required name="produkt" id="product-select">
+        <option value="">Wybierz produkt</option>
+        <option value="p1">Myszka SteelSeries rival 650 Wireless</option>
+        <option value="p2">Arctis Nova 7 Wireless Gen 2</option>
+        <option value="p3">Apex Pro TKL Gen 3 White - US</option>
+    </select>
+    <label for="quantity-input">ilosc-sztuk: (1-5) (pole obowiązkowe)</label>
+    <input required type="number" name="ilosc" min="1" max="5" step="1" id="quantity-input">
+    <p id="live-calculation">Wybierz produkt i ilość (1-5), aby zobaczyć wycenę.</p>
+    <label for="message-input">wiadomość: (10-500 znaków) (pole obowiązkowe)</label>
+    <textarea required name="wiadomosc" minlength="10" maxlength="500" id="message-input"></textarea>
+    <span id="message-error" style="color: #ff4444; font-weight: bold;"></span>
+    <button type="submit">Sprawdź zapytanie</button>
+    <section id="summary-section" style="margin-top: 15px; white-space: pre-line; font-weight: bold;"></section>
+</form>
